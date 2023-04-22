@@ -16,7 +16,7 @@ For someone else to use the server, I will need to create a user for them on the
 
 
 # Troubleshooting
-To manually kick off a mount if the directory is not available through the samba service, use `sudo mount -a`. I added `vers=2.0` due to [this stackoverflow answer]{https://stackoverflow.com/a/73002054}. After updating PopOS we can probably get rid of it.
+To manually kick off a mount if the directory is not available through the samba service, use `sudo mount -a`. I added `vers=2.0` due to [this stackoverflow answer](https://stackoverflow.com/a/73002054). After updating PopOS we can probably get rid of it.
 
 If the issue is that the USB drive isn't mounting to the pi, then you can try to run `sudo mount -a` on the Pi, and if it still doesn't work then investigate by running `df -h`. If the drives doesn't show up (/dev/sda1) then run `sudo blkid` to see if it's listed at all. You can look at potentially helpful error messages by running `sudo dmesg`. After that turn to the internet, because I have no clue what you're looking at.
 
